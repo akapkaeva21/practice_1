@@ -1,0 +1,333 @@
+@import url('https://fonts.google.com/share?selection.family=Lato:ital,wght@300,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900');
+
+*{
+  margin:  0;
+  padding: 0;
+}
+
+
+body, html {
+  background: #fff;
+  color: rgb(31, 9, 47);
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.page-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wrapper{ /*основной класс для ВСЕХ компонентов;*/
+  width: 1280px; /*ширина экрана */
+  margin: 20px auto;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+}
+
+header {
+  position: relative;
+}
+
+header.logo{
+  font-weight: 600;
+  font-size: 40px;
+}
+
+header  ul.nav{
+  float: right;
+  list-style: none;
+}
+
+header ul.nav li{
+  display: inline;
+  margin-left: 25px;
+  cursor: pointer;
+  transition: opacity 500ms ease;
+}
+
+header ul.nav li button{
+  margin-left: 5px;
+  display: inline-block;
+  background: rgb(236, 206, 253);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+}
+
+header ul.nav li:hover{ /*прозрачность при наведении*/
+  opacity: 0.5;
+}
+
+header .shop-card-button {
+  float: right;
+  font-size: 30px;
+  margin: 10px 10px 40px auto;
+  cursor: pointer;
+  transition: color, transform 500ms ease;
+}
+
+header .shop-card-button:hover,
+header .shop-card-button.active {
+  color: #21c712;
+  transform: scale(1.5);
+}
+
+header .shop-card {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 450px;
+  background: #ffffff;
+  -webkit-box-shadow: 4px 4px 8px 0px #682ca3;
+  -moz-box-shadow: 5px 5px 10px 0px #682ca3;
+  z-index: 1000;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+header .shop-card .empty h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+
+
+}
+
+header .shop-card .item {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+header .shop-card .item img{
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-card .item h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+header .shop-card .item p {
+  color: #303030;
+  font-weight: 600;
+}
+
+header .shop-card .item .delete-icon {
+  color: #682ca3;
+  float: right;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+  transition: color, transform 200ms ease;
+}
+
+header .shop-card .item .delete-icon:hover {
+  color: #250744;
+  transform: scale(1.5);
+
+}
+
+header .shop-card .sum {
+  float: left;
+  width: 100%;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #521957;
+  font-size: 30px; /*размер текста*/
+}
+
+header .shop-card p .order{
+  margin-left: 5px;
+  display: inline-block;
+  background: rgb(236, 206, 253);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+}
+
+header .presentation{
+  margin: 50px 0;
+  background: url('./image/plum.jpg');
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  /*background-blend-mode: multiply;
+  background-color: #2e032c44;*/
+}
+
+header .presentation::after{
+  content: 'Лучшие товары для ваших питомцев!';
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  width: 400px;
+  font-size: 40px; /*размер текста*/
+  font-weight: 600;
+  color: #ffffff;
+}
+
+header .presentation::before{
+  content: 'Pet&Love&U&Me';
+  position: absolute;
+  text-align: center;
+  top: 450px;
+  left: 550px;
+  width: 200px;
+  font-size: 30px; /*размер текста*/
+  font-weight: 450;
+  color: rgb(239, 198, 255);
+}
+
+.categories div{
+  display: inline-block;
+  background: rgb(236, 206, 253);
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+}
+
+.sign div{
+  display: block;
+  position: absolute;
+  background: rgb(232, 216, 252);
+  border-radius: 50px;
+  padding: 10px 20px;
+
+  font-size: 21px; /*размер текста*/
+  width: 500px;
+  border: 1px solid transparent;
+}
+
+.categories div:hover {
+  border: #421f3f;
+  transform: scale(1.1);
+
+}
+
+.full-item{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(94, 94, 94, 0.43);
+  z-index: 9999;
+  overflow: auto;
+} /*модальное окно*/
+
+.full-item>div {
+  width: 1000px;
+  position: relative;
+  margin: 10% auto;
+  padding: 10px 10px;
+  background: #fff;
+  border-radius: 9px;
+}
+
+contacts .presentation{
+  margin: 50px 0;
+  background: url('./image/cat.jpg');
+  width: 75%;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /*background-blend-mode: multiply;
+  background-color: #2e032c44;*/
+}
+
+main {
+  display:  flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .item {
+  width: 30%;
+  margin-bottom: 50px;
+  background: #e3c8e5;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+main .item img, .full-item .item img {
+  width: 100%;
+  transition: transform 500ms ease;
+  cursor: pointer;
+}
+
+main .item img:hover, .full-item .item img:hover { /*класс hover - анимация при наведении курсора*/
+  transform: scale(1.05);
+}
+
+main h2, main p, main b {
+  margin: 10px 20px;
+  color: #303030;
+}
+
+main p, .full-item p {
+  color: #521957;
+  font-size: 30px; /*размер текста*/
+
+}
+
+main .add-to-card, .full-item .add-to-card {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: #421f3f;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 200ms ease;
+}
+
+main .add-to-card:hover, .full-item .add-to-card:hover {
+  transform: scale(1.25) translateY(-5px);
+}
+
+footer {
+  font-weight: 300;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 100px ;
+}
